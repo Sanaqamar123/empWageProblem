@@ -24,5 +24,25 @@ public class empWageProblem {
 	int WagePartTimePerDay=WagePerHour*PartTimeHour;
 	System.out.println("Part time wage per day : "+WagePartTimePerDay);
 
+	//Getting work hour by using switch case
+	int choice = (int)(Math.floor(Math.random()*10)%3);
+	switch(choice) {
+	case 1:
+		System.out.println("Employee is full time");
+		int WorkHour=8;
+		System.out.println("Work hour : "+WorkHour);
+		break;
+
+	case 2:
+		System.out.println("Employee is part time");
+		WorkHour=8;
+		System.out.println("Work hour : "+WorkHour);
+		break;
+
+	default :
+		System.out.println("Employee absent");
+		break;
+	}
+
 	}
 }
