@@ -49,5 +49,17 @@ public class empWageProblem {
 	int TotalWagePerMonth=WorkingDayPerMonth*WagePerDay;
 	System.out.println("Total wage per month : "+TotalWagePerMonth);
 
+	//Condition continue till the maximum days and maximum hours is reached for a month 
+	int day=1;
+	int HoursInDay=8;
+	int MaxWorkingHours=100;
+	while(day <= WorkingDayPerMonth && HoursInDay <= 100)
+	{
+		int Wage=WagePerDay*day;
+		System.out.println("Wage for "+day+" : "+Wage);
+		day=day+1;
+		HoursInDay=HoursInDay+8;
+	}
+
 	}
 }
