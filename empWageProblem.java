@@ -36,9 +36,9 @@ class empWage1 extends empWage{
 		}
 
 		int totalWage=totalHours*wagePerHour;
-		System.out.println("Enter company name");
+		System.out.println("\nEnter company name");
 		String name = sc.nextLine();
-		System.out.println("Company Name : "+name+"\nTotal employee Wage : "+totalWage+"\n");
+		System.out.println("\nCompany Name : "+name+"\nTotal employee Wage : "+totalWage+"\n");
 		return totalWage;
 	}
 }
@@ -55,13 +55,13 @@ public class empWageProblem extends empWage1 {
 
         for (int i = 0; i < n; i++) {
 
-        	System.out.println("Enter wage per day : ");
+        	System.out.println("\nEnter wage per day : ");
         	int wage_per_day = sc.nextInt();
 
-        	System.out.println("Total working days : ");
+        	System.out.println("\nTotal working days : ");
         	int working_days = sc.nextInt();
 
-        	System.out.println("Maximum hours in a month");
+        	System.out.println("\nMaximum hours in a month");
         	int max_hours_in_month = sc.nextInt();
 	        Company[i] = new empWageProblem();
         	Company[i].computeEmpWage(wage_per_day,working_days,max_hours_in_month);
